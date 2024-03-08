@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CAPSTONE Example Website</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>This is a simple webpage created with HTML, CSS, and JavaScript. We will be discussing Electrospray technology.</p>
+        </section>
+
+        <section>
+            <h2>Stuff & Things</h2>
+            <ul>
+                <li>Data</li>
+                <li>Locations</li>
+                <li>Charts</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Change Background Color</h2>
+            <button onclick="changeBackgroundColor()">Change Color</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Spring 2024 - Capstone course team three. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function changeBackgroundColor() {
+            const body = document.body;
+            const currentColor = body.style.backgroundColor;
+            const newColor = currentColor === 'green' ? '#f7f7f7' : 'green';
+            body.style.backgroundColor = newColor;
+        }
+    </script>
+
+</body>
+
+</html>
