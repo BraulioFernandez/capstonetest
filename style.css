@@ -1,0 +1,141 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed; /* This will make the navbar stay at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the nav bar is above other content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #555;
+}
+
+/* Header styling */
+header {
+    background-color: #000080; /* Dark blue background */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #000080; /* Dark blue background */
+    color: white; /* Change text color for visibility on dark background */
+    clear: both; /* Clear any floats */
+}
+
+#project-overview {
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#project-overview p {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+#site-locations {
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#site-locations p {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000; /* Darker black background */
+    color: white;
+    width: 100%;
+    position: relative; /* Change from absolute to avoid overlap with other content */
+    bottom: 0;
+    clear: both; /* Clear any floats */
+}
+
+/* Ensure content doesn't overlap with footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Responsive layout adjustments */
+@media (min-width: 700px) {
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    .container {
+        width: 85%;
+        margin: auto;
+        overflow: hidden; /* Clear the float */
+    }
+
+    header, footer, nav, section {
+        padding: 20px;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    nav {
+        text-align: right;
+    }
+}
