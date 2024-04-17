@@ -5,53 +5,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pathogen Detection System Project</title>
     <link rel="stylesheet" href="style.css">
-    <iframe src="navbar.html" width="100%" height="100" frameborder="0" scrolling="no"></iframe>
+    <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.83/darkreader.min.js"></script>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="background.html">Background/About</a></li>
+            <li><a href="electrospray-analysis.html">Electrospray Analysis</a></li>
+            <li><a href="ai-detection.html">AI Detection Captcha</a></li>
+            <li><a href="locations.html">Potential Pilot Locations</a></li>
+            <!-- Rounded switch -->
+<label class="switch" id="darkModeToggle">
+    <input type="checkbox" id="darkModeCheckbox">
+    <span class="slider round"></span>
+  </label>
+  
+  <!-- DarkReader script -->
+  <script>
+    // Function to toggle DarkReader
+    function toggleDarkMode() {
+      const darkReaderState = DarkReader.getState();
+      if (darkReaderState.enabled) {
+        DarkReader.disable();
+      } else {
+        DarkReader.enable({
+          brightness: 100,
+          contrast: 90,
+          sepia: 10
+        });
+      }
+      // Reload the page after toggling DarkReader
+      location.reload();
+    }
+  
+    // Event listener for checkbox change
+    document.getElementById('darkModeCheckbox').addEventListener('change', function() {
+      toggleDarkMode();
+    });
+  
+    // Initialize DarkReader state based on checkbox
+    document.addEventListener('DOMContentLoaded', function() {
+      const darkModeCheckbox = document.getElementById('darkModeCheckbox');
+      if (darkModeCheckbox.checked) {
+        DarkReader.enable({
+          brightness: 100,
+          contrast: 90,
+          sepia: 10
+        });
+      }
+    });
+  </script>
+  
+        </ul>
+    </nav>
 
     <!-- Homepage Content -->
     <header>
         <h1>Pathogen Detection System Project</h1>
-        <p>Welcome to the homepage of the Pathogen Detection System Project. Explore the sections to learn more about our work.</p>
     </header>
+    <div class="wrapper">
+        <div class="container_for_quotes_and_images">
+            <div class="image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/800px-Harvard_University_coat_of_arms.svg.png" height="100px" width="100px">
+            </div>
+            <div class="quote">
+                <h2>
+                    “I don't know; we don't know; nobody knows what's coming next,”
+                </h2>
 
-    <main>
-        <section id="project-overview">
-            <p>
-                “I don't know; we don't know; nobody knows what's coming next,” emphasized <a href="https://connects.catalyst.harvard.edu/Profiles/display/Person/99348">Jacob Lemieux</a>, Harvard Medical School 
-                assistant professor of medicine at Massachusetts General Hospital during a recent symposium hosted by the HMS-led 
-                Massachusetts Consortium on Pathogen Readiness, or MassCPR.
-                <p>
+                <br>
+
+                <h4>
                     “The interval between pandemics is, cruelly, often just long enough that we forget, and just short enough that they 
-                    happen repeatedly during our lifetimes,” Lemieux said.
+                    happen repeatedly during our lifetimes,” 
+               </h4>
+               
+               <br>
+
+                <h4>
+                    “If we want to identify where the next SARS-CoV-2 variant is going to come from, we need to understand what's circulating in those reservoirs,”
+                </h4>
+
+                <br>
+
+                <h4>
+                    <a href="https://connects.catalyst.harvard.edu/Profiles/display/Person/99348">-Jacob Lemieux</a>, Harvard Medical School 
+                    assistant professor of medicine
+                </h4>
+            </div>
+        </div>
+
+        <div class="container_for_quotes_and_images2">
+            <div class="image2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Boston_University_seal.svg/800px-Boston_University_seal.svg.png" height="100px" width="100px">
+            </div>
+            <div class="quote2">
+                <h4>
+                    “These pathogens affect all of us, and we need to work together to prevent, mitigate, and respond to pandemics,” -Jacob Lemieux
+                </h4>
+
+                
+
+                <br>
+
+                <h4>
+                    “Viruses hitch rides on planes all the time. We are going to continue to see viruses breaking through prior geographic boundaries, we are going to need large, coordinated research and response units"
+                </h4>
+
+                <br>
+                <h4>
+                    -John Connor, Associate professor of microbiology at Boston University Chobanian & Avedisian School of Medicine
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="alt_wrapper">
+        <div class="container-for-quickjump">
+            <div class="background-tab">
+                <a href="background.html"><button>Learn About More</button></a>
+            </div>
+        </div>
+
+        <div class="container-for-synopses">
+            <div class="synopses">
+                <p>
+                    <p style="font-size: large;">
+                        The purpose of this site is to inform you on the advantages of using such technology, not only for public health but,
+                        pharmacutical companies may be interested in this data collection due to the profitablity of expanding research on active
+                        disease.
+                    </p>
                 </p>
-            </p>
+            </div>
+        </div>
+    </div>
 
-            <p>
-                The technology responsible for identifying the micro-organisms is the AI powered captcha system. Essentially,
-                it will look at slides of samples taken by the electrospray device and indentify the microbiles so that researchers
-                can be more aware of what's out there.
-            </p>
-    
-            <p>
-                This is the current leading technology for capturing samples for the AI detection system, others may be more useful though.
-            </p>
+    <div class="alt_wrapper">
+        <div class="container-for-quickjump">
+            <div class="electrospray-analysis-tab">
+                <a href="electrospray-analysis.html"><button>Learn More About Electrospray</button></a>
+            </div>
+        </div>
 
-            <p>
-                The Pilot Proposal tab takes advantage of an embedded map showing data that may be useful for deciding on which locations
-                would be ideal for pilot testing.
-            </p>
+        <div class="container-for-synopses">
+            <div class="synopses">
+                <p>
+                    <p style="font-size: large;">
+                        This is the current leading technology for capturing samples for the AI detection system, others may be more useful though.
+                        
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="alt_wrapper">
+        <div class="container-for-quickjump">
+            <div class="ai-detection-tab">
+                <a href="ai-detection.html"><button>Learn About AI-Detection</button></a>
+            </div>
+        </div>
+
+        <div class="container-for-synopses">
+            <div class="synopses">
+                <p>
+                    <p style="font-size: large;">
+                        The technology responsible for identifying the micro-organisms is the AI powered captcha system. Essentially,
+                        it will look at slides of samples taken by the electrospray device and indentify the microbiles so that researchers
+                        can be more aware of what's out there.
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="alt_wrapper">
+        <div class="container-for-quickjump">
+            <div class="potential-pilot-locations-tab">
+                <a href="locations.html"><button>Pilot Map</button></a>
+            </div>
+        </div>
+
+        <div class="container-for-synopses">
+            <div class="synopses">
+                <p>
+                    <p style="font-size: large;">
+                        The Pilot Proposal tab takes advantage of an embedded map showing data that may be useful for deciding on which locations
+                        would be ideal for pilot testing.
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
     
-            <p>
-                The purpose of this site is to inform you on the advantages of using such technology, not only for public health but,
-                pharmacutical companies may be interested in this data collection due to the profitablity of expanding research on active
-                disease.
-            </p>
-        </section>
     
-        <!-- Additional sections can be added as needed -->
-    </main>
-<script src="script.js"></script>
+        <!-- Footer -->
+    <footer>
+        <p>© 2024 Pathogen Detection System Project. All rights reserved.</p> Contact: <a href="mailto:JoeBangosemail@email.com">JoeBangosemail@email.com</a>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
-<iframe src="footer.html" width="100%" height="90" frameborder="0" scrolling="no"></iframe>
